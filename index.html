@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>QuizEditor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  <link href="lib/jsoneditor.css" rel="stylesheet" type="text/css">
+  <link href="lib/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="lib/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+  <link href="lib/toastr.min.css" rel="stylesheet" type="text/css">
+  <link href="lib/css-toogle-switch.min.css" rel="stylesheet" type="text/css">
+  <link href="lib/roundslider.min.css" rel="stylesheet" type="text/css">
+  <link href="css/editor.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/bootstrap.js"></script>
+  <script src="lib/bootstrap-select.min.js"></script>
+  <script src="lib/jsoneditor.min.js"></script>
+  <script src="lib/progressbar.min.js"></script>
+  <script src="lib/velocity.min.js"></script>
+  <script src="lib/toastr.min.js"></script>
+  <script src="lib/touch-dnd.js"></script>
+  <script src="lib/svg.min.js"></script>
+  <script src="lib/roundslider.min.js"></script>
+
+</head>
+<body>
+
+<div id="json">
+  <div id="buttons" class="btn-group">
+  	<div id="addQ" class="dropdown btn-group">
+    	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Hinzufügen
+    	<span class="caret"></span></button>
+  		  <ul class="dropdown-menu">
+          <li id="qmc"><a href="#">Multiple Choise</a></li>
+          <li id="qmx"><a href="#">Multiple Choise (mehrfachwahl)</a></li>
+  		    <li id="qst"><a href="#">Sortieren</a></li>
+  		    <li id="qjn"><a href="#">Ja-Nein</a></li>
+  		    <li id="rng"><a href="#">Range</a></li>
+          <li id="ltxt-btn"><a href="#">Lückentext</a></li>
+          <li id="qzo"><a href="#"><s>Zuordnen</s> Bald erhältlich</a></li>
+          <li id="qcn"><a href="#"><s>Verbinden</s> Bald erhältlich</a></li>
+  		  </ul>
+  	</div>
+    <button id="starttest" class="btn btn-success" type="button">Testen</button>
+    <button class="btn btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Datei
+      <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li id="submit">
+              <a id="submit-Now" href="#">Speichern unter:</a>
+              <input id="fileName" type="text" class="form-control" placeholder="Dateiname" aria-describedby="basic-addon1">
+          </li>
+          <li id="load"><a href="#">Laden</a></li>
+        </ul>
+  </div><!--end buttons-->
+  <div id="jsoneditor"></div>
+</div><!--end json-->
+
+<div id="fSel" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Ladedialog</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="bs-docs-example no-code">
+    <div class="btn-group bootstrap-select">
+        <button type="button" class="btn dropdown-toggle btn-default"><span class="filter-option pull-left">Wähle die Quizvorlage aus...</span></span>
+        </button>
+        <div class="dropdown-menu open">
+            <div class="bs-searchbox">
+                <input type="text" class="form-control" autocomplete="off">
+            </div>
+            <ul class="dropdown-menu inner" role="menu">
+            </ul>
+        </div>
+        <select id="fileSelect" class="selectpicker" data-live-search="true" tabindex="-98">
+        </select>
+    </div>
+</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
+        <button id="loadQuiz" type="button" class="btn btn-primary">Lade Quizvorlage</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="quiz"></div>
+
+
+
+<script src="js/editor.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

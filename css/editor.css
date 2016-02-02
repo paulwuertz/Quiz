@@ -1,0 +1,13 @@
+    #jsoneditor {
+      width: 500px;
+      height: 500px;
+      float: left;
+    }
+    #buttons {
+      float: left;
+      margin-right: 70%;
+      text-align: center;
+    }
+    #quiz {
+      margin-left: 100px;
+    }

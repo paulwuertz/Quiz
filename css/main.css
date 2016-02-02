@@ -1,0 +1,209 @@
+   /*css of all quiz components*/
+    #quiz{
+      overflow: hidden;
+      white-space:nowrap;
+      background-color: #F6F5F7;
+      width: 360px;
+      height: 480px;
+      float: left;
+      position: relative;
+      border:1px solid black;
+      box-sizing: content-box;
+    }
+
+    #quiz > .quarter-circle {
+      background-color:#1e6038;
+      height:100px;
+      width: 100px;
+      -moz-border-radius: 100px 0 0 0;
+      border-radius: 100px 0 0 0;
+      margin: 0;
+      position: absolute;
+      bottom:0px;right:0;
+      visibility:hidden;
+    }
+
+    #quiz > #questions > #score{
+          position: absolute;
+          top: 15px;
+          left: 20px;
+    }
+
+    #quiz > #questions {
+        position: absolute;
+    }
+    #quiz > #questions > .relToast {
+        position: relative;
+    }
+
+    #quiz > #questions > .question{
+      display: inline-table;
+      background-color: #fff;
+      padding: 5px;
+      margin: 5px;
+      width: 340px;
+      height: 460px;
+      white-space:normal;
+      position: absolute;
+    }
+
+    #quiz > #questions > div.question > h4{
+      margin: 20px;
+      text-align: center;
+      position: relative;
+    }
+    /*css of all quiz components*/
+    #quiz > #questions > div.multiple > button, #quiz > #questions > div.multipleX > button{
+      margin-top: 20px;
+      white-space: normal;
+    }
+    /*css of all quiz components*/
+    #quiz > #questions > div.multipleX > button{
+      margin-top: 15px;
+    }
+
+    #quiz > #questions > div.multipleX > button > .iconCheck {
+      float: right;
+    }
+
+    #quiz > #questions > button.btn-check{
+      text-align: center;
+    }
+
+    #quiz > #questions  > .sortable> .sort > ul.sort-list {
+      list-style: none;
+      float: left;
+      margin-left: -30px;
+    }
+    #quiz > #questions  > #question > .button {
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      text-align: center;
+    }
+
+    #quiz > #questions > .sortable > .sort > ul.sort-list li{
+        border: 1px solid #DCDBDD;
+        margin: 0px 20px 0 15px;
+        width: 300px;
+        height: 26px;
+        background-color: #F6F5F7;
+        box-sizing: border-box;
+        vertical-align: top;
+        text-align: center;
+
+    }
+    #quiz > #questions > .cloze > .clozeText > .text{
+      margin-bottom: 5px;
+      float: left;
+    }
+    #quiz > #questions > .cloze > .clozeBrick{
+          margin-top: 10px;
+          width: 320px;
+          float: right;
+    }
+    #quiz > #questions > .cloze > .clozeBrick > .clozer, #quiz > #questions > .cloze > .clozeText > .gap > .clozer{
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          background-color: #0062E5;
+          font-weight: bold;
+          display: inline-block;
+          max-width: 95px;
+    }
+    #quiz > #questions > .cloze > .clozeBrick > .clozer{
+          margin: 5px;
+          padding: 5px;
+    }
+    #quiz > #questions > .cloze > .clozeText > .gap > .clozer{
+          margin: 0px;
+          padding: 5px;
+    }
+    #quiz > #questions > .cloze > .clozeText > .gap{
+        text-align: center;
+        height: 16px;
+        margin: 2px;
+        color: #020003;
+        font-size: 1em;
+        font-weight: bold;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #020003;    
+        position: relative;
+        display: inline-block;
+        width: 100px;
+        height: auto;
+    }
+    #quiz > #questions > .map > .map > .map-left, #quiz > #questions > .map > .map > .map-right{
+        float: left;
+        width: 140px;
+        font-size: 12px;
+        list-style: none;
+    }
+    #quiz > #questions > .map > .map > .map-left > li > .content, #quiz > #questions > .map > .map > .map-right > li > .content{
+        background-color: red 
+    }
+
+    #quiz > #questions > .map > .map > .map-left > li, #quiz > #questions > .map > .map > .map-right >li{
+        height: 40px;
+        border: 1px solid gray;
+        border-width: 2px 2px 2px 2px;
+        margin-top: 3px;
+    }
+
+    #quiz > #questions > .map > .map > #connect{
+        width: 50px;
+        height: 460px;
+        float: left;
+    }
+
+    #quiz > p#forward > span{
+        color:#fff;
+        font-size:48px;
+        position:absolute;
+        top:40px;
+        left:40px;
+    }
+    #quiz > p#info{
+        color:#14b;
+        font-size:48px;
+        position:absolute;
+        bottom: -100px;
+        left:150px;
+    }
+
+
+    div#quiz > div.binary > .switch-toggle.switch-3.switch-ios {
+        border-radius: 0;
+    }
+		div#quiz > div#questions > div.binary > div.slide-answers > div:first-child {
+		    -webkit-border-top-left-radius: 25px;
+		    -webkit-border-top-right-radius: 25px;
+		    -moz-border-radius-topleft: 25px;
+		    -moz-border-radius-topright: 25px;
+		    border-top-left-radius: 25px;
+		    border-top-right-radius: 25px;
+		}
+		div#quiz > div#questions  > div.binary > div.slide-answers > div:last-child {
+		    -webkit-border-bottom-right-radius: 25px;
+		    -webkit-border-bottom-left-radius: 25px;
+		    -moz-border-radius-bottomright: 25px;
+		    -moz-border-radius-bottomleft: 25px;
+		    border-bottom-right-radius: 25px;
+		    border-bottom-left-radius: 25px;
+        margin-bottom: 10px;
+		}
+
+    div#quiz > div#questions > .range > #rangeCirc, div#quiz > div#questions > .range > div.button {
+        margin: -10px auto;
+        width: 100%;
+    }
+
+    div#quiz > div#questions > .question > .infoText {
+        text-align: justify;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .img-responsive {
+      width: 100%;
+    }
